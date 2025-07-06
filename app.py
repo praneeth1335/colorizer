@@ -19,9 +19,9 @@ def colorizer(img):
     # load our serialized black and white colorizer model and cluster
     # center points from disk
     #Note: Please take in account the directories of your local system.
-    prototxt = r"D:\Work\freez\aaa\Colorizer\models\models_colorization_deploy_v2.prototxt"
-    model = r"D:\Work\freez\aaa\Colorizer\models\colorization_release_v2.caffemodel"
-    points = r"D:\Work\freez\aaa\Colorizer\models\pts_in_hull.npy"
+    prototxt = r"C:\Users\bspra\Desktop\Ai Black and white image colorization with OpenCV\models\models_colorization_deploy_v2.prototxt"
+    model = r"C:\Users\bspra\Desktop\Ai Black and white image colorization with OpenCV\models\colorization_release_v2.caffemodel"
+    points = r"C:\Users\bspra\Desktop\Ai Black and white image colorization with OpenCV\models\pts_in_hull.npy"
     net = cv2.dnn.readNetFromCaffe(prototxt, model)
     pts = np.load(points)
     # add the cluster centers as 1x1 convolutions to the model
